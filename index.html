@@ -1,1 +1,172 @@
-Hello World
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JCU Campus Maps, designed for your mobile</title>
+	<meta name="description" content="Fast, intuitive maps of JCU Townsville campus for iOS and Android mobile devices">
+        <!--<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">-->
+	<link rel="shortcut icon" id="favicon" href="favicon.ico">
+	<meta name="author" content="Bryce Thomas">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Pacifico:400" rel="stylesheet" type="text/css">
+	<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript"
+        src="js/jquery.onepage-scroll.js"></script>
+        <link href="css/onepage-scroll.css" rel="stylesheet" type="text/css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+
+	<script>
+	  $(document).ready(function(){ $(".main").onepage_scroll({
+          sectionContainer: "section", loop: true, 
+          responsiveFallback: false }); });
+		
+	</script>
+</head>
+<body>
+    <div class="wrapper">
+      <div class="main">
+        <!-- Page 1 -->
+        <section class="page1">
+          <div class="page_container">
+            <span>
+              <div><h1>JCUNav</h1></div>
+              <div><h2>Fast, intuitive maps of James Cook University
+                  Townsville campus, designed for your phone.</h2></div>
+              <!-- empty credit is stupid alignment hack -->
+              <!-- <p class="credit"></p> -->
+              <div class="btns">
+                <a href="https://itunes.apple.com/au/app/jcunav/id497618649?mt=8">
+                  <img src="img/app_store_badge.png" alt="App Store Badge">
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.brycestrosoft.jcunav">
+                  <img alt="Android app on Google Play"
+                       src="img/en_app_rgb_wo_60.png">
+                </a>
+  	      </div>
+            </span>
+            <span>
+              <img src="img/white_iphone_jcunav.png" alt="JCUNav map on phone" style="max-width: 470px; height: auto; margin-left: 45px;">
+            </span>
+  	  </div>
+        </section>
+
+	<!-- Page 2 -->
+        <section class="page2">
+	  <div class="page_container">
+            <span>
+              <div><h1>Buildings</h1></div>
+              <div><h2><p>Easily search for a building by name or
+              number.</p> <p>JCUNav shows you a path from your current
+              location to your selected destination, so you'll get
+              there in no time.</p></h2></div>
+            </span>
+            <span>
+              <img src="img/white_iphone_buildings.png"
+                   alt="List of searchable buildings"
+                   style="max-width: 470px; height: auto; margin-left: 45px;">
+            </span>
+	  </div>
+        </section>
+
+	<!-- Page 3 -->
+	<section class="page3">
+	  <div class="page_container">
+            <span>
+            <h1>People</h1>
+            <h2><p>Sooner or later you're going to need to contact
+              someone on campus.</p>  <p>Use people search to find
+              faculty and staff contact details&mdash;you can start a
+              phone call or email with the tap of a button (iPhone
+              only).</h2>
+            </span>
+            <span>
+              <img src="img/white_iphone_people.png" 
+                   alt="Contact details for an example staff member"
+                   style="max-width: 470px; height: auto; margin-left: 45px;">
+            </span>
+   	  </div>
+          <a href="https://github.com/peachananr/onepage-scroll" style="position:fixed; bottom:5px; right:5px; font-size:10px">Site theme</a>
+        </section>      
+    </div>
+      <div class="back">
+          <div style="display:table; width:100%;">
+            <div style="display:table-row; border:1px solid black;">
+              <div style="display:table-cell;"><img src="img/jcunav_icon.png"></div>
+              <div style="display:table-cell; vertical-align:middle;
+                          padding:5px;">JCUNav</div>
+              <div style="display:table-cell; vertical-align:middle; padding:10px; text-transform:uppercase;font-size:16px; font-weight:normal;">
+                <a href="javascript:void(0)" onclick="document.getElementById('about').style.display='block';document.getElementById('about_fade').style.display='block'">About</a>
+              </div>
+              <div style="display:table-cell; white-space:nowrap; padding:10px;vertical-align:middle;text-transform:uppercase;font-size:16px; font-weight:normal;">
+                <a href="javascript:void(0)" onclick="document.getElementById('web_version').style.display='block';document.getElementById('web_version_fade').style.display='block'">Web Version</a>
+              </div>
+              
+              <div style="display:table-cell; vertical-align:middle;
+                          width:100%;"></div>
+              <div style="display:table-cell;
+                          vertical-align:middle; padding-right:5px;"><a href="https://itunes.apple.com/au/app/jcunav/id497618649?mt=8"><img src="img/app_store_badge.png"></a></div>
+              <div style="display:table-cell; vertical-align:middle;">
+                <a href="https://play.google.com/store/apps/details?id=com.brycestrosoft.jcunav">
+                  <img src="img/en_app_rgb_wo_60.png">
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Lightbox content for about and web version -->
+    <div id="about" class="white_content">
+      <div style="float:right; color:red;">
+        <a href="javascript:void(0)" onclick="document.getElementById('about_fade').style.display='none';document.getElementById('about').style.display='none';">
+          X
+        </a>
+      </div>
+      <h2>About</h2>
+
+      <p>
+        JCUNav is being developed as a part of a PhD student project
+        at JCU.  For users, JCUNav provides a fast and convenient
+        method of campus navigation.  On the research front, it is our
+        hope that JCUNav will provide novel insight into campus
+        activity based on the collection of anonymised statistics.  By
+        using JCUNav, you’ll be contributing to novel research at JCU.
+        Hopefully in the near future as the details unfold, we’ll be
+        able to share some of our findings with you.  Until that time,
+        thank you for using JCUNav.  
+      </p>
+      <p>
+        We listen carefully to user
+        feedback, so if you have any comments, questions or
+        suggestions on how we can improve JCUNav, please do contact
+        us: <a href="mailto:jcunavmob@gmail.com">jcunavmob@gmail.com</a>.
+      </p>
+      <p>
+        Disclaimer: JCUNav is not officially endorsed by James Cook
+        University.
+      </p>  
+    </div>
+    <div id="about_fade" class="black_overlay"></div>
+    <div id="web_version" class="white_content">
+      <div style="float:right; color:red;">
+        <a href="javascript:void(0)" onclick="document.getElementById('web_version_fade').style.display='none';document.getElementById('web_version').style.display='none';">
+          X
+        </a>
+      </div>
+      <h2>Web Version</h2>
+
+      <p>
+        JCUNav works best on Apple and Android devices using the
+        native app available for free from the Apple App Store and
+        Google Play Store respectively.  The good news though
+        is that there is still a web version you can access through
+        your web browser
+        at <a href="http://jcunav.appspot.com/">http://jcunav.appspot.com/</a>
+        if you need to.
+      </p>
+
+    </div>
+    <div id="web_version_fade" class="black_overlay"></div>
+</body>
+</html>

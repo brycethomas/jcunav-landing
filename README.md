@@ -1,4 +1,1 @@
-jcunav-landing
-==============
-
-The landing page for JCUNav with pointers to the iOS, Android and Web versions of the app.
+This repository is dedicated to hosting the live version of the JCUNav landing page.  The development version of the landing page is separately maintained in private with the JCUNav application.
